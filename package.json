@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack --config ./bin/webpack.config.js",
+    "pro": "cross-env NODE_ENV=production webpack --config ./bin/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,33 @@
   "bugs": {
     "url": "https://github.com/zfAndadhere/webpack_vue/issues"
   },
-  "homepage": "https://github.com/zfAndadhere/webpack_vue#readme"
+  "homepage": "https://github.com/zfAndadhere/webpack_vue#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "autoprefixer": "^9.7.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "log4js": "^5.3.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "@babel/runtime": "^7.6.3",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3"
+  }
 }
